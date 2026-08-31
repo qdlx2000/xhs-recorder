@@ -1,0 +1,12 @@
+{
+  "host_id": "YOUR_HOST_ID",
+  "username": "YOUR_USERNAME",
+  "cookies": {
+    "a1": "YOUR_A1_COOKIE",
+    "web_session": "YOUR_WEB_SESSION_COOKIE"
+  },
+  "check_interval": 3600,
+  "check_live_interval": 600,
+  "whisper_model": "medium",
+  "output_dir": "./recordings"
+}

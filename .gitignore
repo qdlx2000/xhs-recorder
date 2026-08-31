@@ -1,0 +1,42 @@
+# 录制文件
+*.m4a
+*.mp3
+*.flv
+*.ts
+
+# 转写文件
+*.txt
+!requirements.txt
+
+# 日志文件
+*.log
+
+# 配置文件（包含敏感信息）
+config.json
+cookies.json
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 编辑器
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 临时文件
+tmp/
+temp/
+*.tmp
