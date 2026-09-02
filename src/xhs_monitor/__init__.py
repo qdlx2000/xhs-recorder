@@ -1,4 +1,4 @@
-"""XHS Monitor - 小红书直播监控"""
+"""XHS Monitor - 小红书直播监控 / Xiaohongshu (Little Red Book) livestream monitoring tool"""
 from .config import Config
 from .monitor import Monitor
 

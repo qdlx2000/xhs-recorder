@@ -1,4 +1,4 @@
-"""配置模块"""
+"""配置模块 / Configuration module"""
 import json
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -7,7 +7,7 @@ from typing import Optional
 
 @dataclass
 class Config:
-    """监控配置"""
+    """监控配置 / Monitoring configuration"""
     host_id: str
     username: str
     cookies: list = field(default_factory=list)
@@ -18,7 +18,7 @@ class Config:
     
     @classmethod
     def from_file(cls, path: str = "config.json") -> "Config":
-        """从配置文件加载"""
+        """从配置文件加载 / Load configuration from a JSON file"""
         with open(path, "r") as f:
             data = json.load(f)
         
@@ -33,7 +33,7 @@ class Config:
         )
     
     def save(self, path: str = "config.json"):
-        """保存配置到文件"""
+        """保存配置到文件 / Save configuration to a JSON file"""
         data = {
             "host_id": self.host_id,
             "username": self.username,
